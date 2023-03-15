@@ -17,3 +17,6 @@ alert("HI");
 console.log("After");
 
 console.log(Math.PI);
+
+let myNewIt;
+console.log(myNewIt);
