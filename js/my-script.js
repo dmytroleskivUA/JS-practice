@@ -1,13 +1,66 @@
-function multiply(a, b, c) {
-  console.log(`result is ${a * b * c}`);
-}
-multiply(2, 3, 5);
+// const userName = "Dmytro";
 
-const userArr = [
-  { name: "user1", age: 20, profession: "programmer" },
-  { name: "user2", age: 30, profession: "footballer" },
-];
-console.log(userArr[1]);
+// function createUserName(name) {
+//   const result = "Dmytro".toUpperCase();
+//   // const result = name.toUpperCase();
+//   return result;
+// }
+
+// console.log(createUserName(userName));
+
+// !!!!!
+
+const userName = "Dmytro";
+
+function createUserName(name) {
+  return name.toUpperCase();
+}
+
+console.log(createUserName(userName));
+// ❗️❗️❗️
+
+// const userArr = [
+//   { name: "user1", age: 20, profession: "programmer" },
+//   { name: "user2", age: 30, profession: "footballer" },
+// ];
+// console.log(userArr[1]);
+
+// ❗️❗️❗️
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+
+//   if (password === ADMIN_PASSWORD) {
+//     return "Welcome!";
+//   }
+
+//   return "Access denied, wrong password!";
+// }
+// console.log(checkPassword("jqueryismyjam"));
+
+// ❗️❗️❗️
+
+// const age = 20;
+// const gender = "male";
+// const userName = "Dmytro";
+
+// function sayHello(name, age, gender) {
+//   alert("hello, dear " + name);
+//   if (age < 18) {
+//     alert("You are too young!");
+//   }
+//   if (gender === "male") {
+//     alert("Welcome to the club");
+//   }
+// }
+// sayHello(userName, age, gender);
+
+// ❗️❗️❗️
+
+// function multiply(a, b, c) {
+//   console.log(`result is ${a * b * c}`);
+// }
+// multiply(2, 3, 5);
 
 /**
   |==============================================================================|
@@ -692,13 +745,13 @@ console.log(userArr[1]);
   |==============================================================================|
 **/
 
-function isIncluded(array, number) {
-  const result = array.includes(number);
-  console.log(result);
-}
+// function isIncluded(array, number) {
+//   const result = array.includes(number);
+//   console.log(result);
+// }
 
-isIncluded([1, 2, 5, 8, 3], 4); // false
-isIncluded([1, 2, 5, 8, 3], 5); // true
+// isIncluded([1, 2, 5, 8, 3], 4); // false
+// isIncluded([1, 2, 5, 8, 3], 5); // true
 // isIncluded(5, [1, 3, 5]); // error
 
 // function isIncluded(array, number) {
@@ -739,29 +792,29 @@ isIncluded([1, 2, 5, 8, 3], 5); // true
 // console.log(sum) // 16
 
 // function add(a, b) {
-//     if (typeof a !== 'number' || typeof b !== 'number') {
-//         // // console.log('One of operands is not a number')
-//         // return
-//         return 'One of operands is not a number'
-//     }
-//     return a + b
+//   if (typeof a !== "number" || typeof b !== "number") {
+// // console.log('One of operands is not a number')
+// return;
+//     return "One of operands is not a number";
+//   }
+//   return a + b;
 // }
 
-// console.log(add(3, 7)) // 10
-// console.log(add( 5, '10')) // 'One of operands is not a number'
-// console.log(add(3, '7'))
+// console.log(add(3, 7)); // 10
+// console.log(add(5, "10")); // 'One of operands is not a number'
+// console.log(add(3, "7"));
 
 // ❗️❗️❗️ Значення параметрів за замовчуванням
 
 // function add(a = 0, b = 0) {
 //   // const sum = a + b
 //   // return sum
-//  console.log(a)
-//  console.log(b)
-//  return a + b;
+//   console.log(a);
+//   console.log(b);
+//   return a + b;
 // }
 
-// console.log(add(1))
+// console.log(add(1));
 
 // function add(a , b , c ) {
 //     console.log(a + b + c)
