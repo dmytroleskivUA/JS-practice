@@ -1,434 +1,3 @@
-// function calculateEngravingPrice(message, pricePerWord) {
-//   // Change code below this line
-
-//   return pricePerWord * message.split(" ").length;
-
-//   // Change code above this line
-// }
-
-// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
-// console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
-// console.log(calculateEngravingPrice("Web-development is creative work", 40));
-// console.log(calculateEngravingPrice("Web-development is creative work", 20));
-
-// !!!!! ФУНКЦІЇ
-
-// const userName = "Dmytro";
-
-// function createUserName(name) {
-//   const result = "Dmytro".toUpperCase();
-//   // const result = name.toUpperCase();
-//   return result;
-// }
-
-// console.log(createUserName(userName));
-
-// ❗️❗️❗️
-
-// function checkPassword(password) {
-//   const ADMIN_PASSWORD = "jqueryismyjam";
-
-//   if (password === ADMIN_PASSWORD) {
-//     return "Welcome!";
-//   }
-
-//   return "Access denied, wrong password!";
-// }
-// console.log(checkPassword("jqueryismyjam"));
-
-// ❗️❗️❗️
-
-// const age = 20;
-// const gender = "male";
-// const userName = "Dmytro";
-
-// function sayHello(name, age, gender) {
-//   alert("hello, dear " + name);
-//   if (age < 18) {
-//     alert("You are too young!");
-//   }
-//   if (gender === "male") {
-//     alert("Welcome to the club");
-//   }
-// }
-// sayHello(userName, age, gender);
-
-// ❗️❗️❗️
-
-// function multiply(a, b, c) {
-//   console.log(`result is ${a * b * c}`);
-// }
-// multiply(2, 3, 5);
-
-// ❗️❗️❗️
-
-// const userName = "Dmytro";
-
-// function createUserName(name) {
-//   return name.toUpperCase();
-// }
-
-// console.log(createUserName(userName));
-// ❗️❗️❗️
-
-function calculateTotal(number) {
-  let total = 0;
-
-  for (let i = 1; i <= number; i += 1) {
-    total += i;
-  }
-
-  return total;
-}
-console.log(calculateTotal(2));
-// !!! СТРІЛКОВІ ФУНКЦІЇ
-
-// function sayHelloToPerson(name) {
-//   console.log("hello, " + name);
-// }
-// sayHelloToPerson("Dmytro");
-
-// //
-// const sayHelloToPerson2 = (name) => {
-//   console.log("hello 2, " + name);
-// };
-// sayHelloToPerson2("Dmytro");
-
-// //Basic
-// function summ(a, b) {
-//   return a + b;
-// }
-// console.log(summ(10, 5));
-// //Arrow function
-// const summ2 = (a, b) => {
-//   return a + b;
-// };
-// console.log(summ2(10, 8));
-
-// //Short
-
-// const summ3 = (a, b) => a + b;
-// console.log(summ3(10, 10));
-
-// !!!!! МАСИВИ
-
-// const userArr = [
-//   { name: "user1", age: 20, profession: "programmer" },
-//   { name: "user2", age: 30, profession: "footballer" },
-// ];
-// console.log(userArr[0]);
-
-//❗️❗️❗️
-
-// const subscribers = [
-//   { name: "user1", age: 20, profession: "programmer" },
-//   { name: "user2", age: 30, profession: "footballer" },
-//   { name: "user3", age: 18, profession: "teacher" },
-// ];
-// console.log(subscribers.length);
-
-// const haveYouJustGotNewSubscriber = true;
-
-// if (haveYouJustGotNewSubscriber) {
-//   subscribers.splice(1, 1, "NEW");
-// }
-
-// //❗️❗️❗️
-
-// function congratsIfMoreThen100(arr) {
-//   if (arr.length > 100) {
-//     alert("Congrats!");
-//   } else {
-//     alert("Not enough");
-//     // alert(arr.length);
-//   }
-// }
-
-// congratsIfMoreThen100(subscribers);
-
-// !!! КРАЙНІ ЕЛЕМЕНТИ МАСИВУ
-// function getExtremeElements(array) {
-//   return [array[0], array[array.length - 1]];
-// }
-
-// console.log(getExtremeElements([1, 2, 3, 4, 5]));
-// console.log(getExtremeElements(["E", "M", "V"]));
-// console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
-// Напиши функцію getExtremeElements(array), яка приймає один параметр
-// array - масив елементів довільної довжини.Функція повинна повертати
-// масив з двох елементів - першого і останнього елемента параметра array.
-
-// Оголошена функція getExtremeElements(array)
-// Виклик getExtremeElements([1, 2, 3, 4, 5]) повертає [1, 5]
-// Виклик getExtremeElements(["Earth", "Mars", "Venus"]) повертає ["Earth", "Venus"]
-// Виклик getExtremeElements(["apple", "peach", "pear", "banana"]) повертає ["apple", "banana"]
-
-// !!!!!   ЦИКЛИ   !!!!!
-
-// ! For
-
-// function findLongestWord(string) {
-//   let words = string.split(" "); // розділяємо рядок на слова
-//   let longestWord = ""; // змінна для зберігання найбільшого слова
-
-//   for (let i = 0; i < words.length; i++) {
-//     if (words[i].length > longestWord.length) {
-//       longestWord = words[i];
-//     }
-//   }
-
-//   return longestWord;
-// }
-// console.log(findLongestWord("Google do a roll"));
-// console.log(findLongestWord("May the force be with you"));
-
-// ❗️❗️❗️
-// function filterArray(numbers, value) {
-//   const filteredNumbers = [];
-//   for (let i = 0; i < numbers.length; i += 1) {
-//     if (numbers[i] > value) {
-//       filteredNumbers.push(numbers[i]);
-//     }
-//   }
-//   return filteredNumbers;
-// }
-// console.log(filterArray([1, 2, 3, 4, 5], 3));
-
-// ❗️❗️❗️
-
-// function filterArray(numbers, value) {
-//   const filteredNumbers = [];
-
-//   for (let i = 0; i < numbers.length; i += 1) {
-//     const number = numbers[i];
-
-//     if (number > value) {
-//       filteredNumbers.push(number);
-//     }
-//   }
-
-//   return filteredNumbers;
-// }
-// console.log(filterArray([1, 2, 3, 4, 5], 3));
-// !!!!
-
-// Ця функція приймає два параметри: numbers - масив чисел та value - число.
-// Функція створює новий масив filteredNumbers, який буде містити ті числа
-// з масиву numbers, які є більшими за value.
-
-//   Далі, функція проходить через масив numbers за допомогою
-// циклу for та перевіряє кожне число number в масиві.Якщо число number
-// більше за value, то це число додається до масиву filteredNumbers за
-// допомогою методу push.
-
-// На останок, функція повертає масив filteredNumbers,
-//   який містить числа більші за value.
-// !!!!
-
-// function filterArray(numbers, value) {
-//   const filteredNumbers = [];
-
-//   for (const number of numbers) {
-//     if (number > value) {
-//       filteredNumbers.push(number);
-//     }
-//   }
-
-//   return filteredNumbers;
-// }
-
-// console.log(filterArray([1, 2, 3, 4, 5], 3));
-
-// !!!!
-// Функція filterArray отримує два аргументи: numbers - масив чисел,
-//   та value - число, порівняння з яким використовується для фільтрації
-//   чисел у масиві.Функція повертає новий масив, що містить тільки ті числа
-//   з numbers, які більше за value.
-
-// У рефакторингованій версії функції замість циклу for використовується
-// цикл for...of, який дозволяє ітерувати по елементах масиву без потреби
-// створення індексів.Також було видалено зайву змінну number та змінено
-// умову для додавання чисел до filteredNumbers.
-
-// !!!
-
-// Напиши функцію getEvenNumbers(start, end), яка повертає масив
-// усіх парних чисел від start до end.Парним вважається число, яке
-//  ділиться на 2 без остачі(10 % 2 === 0).
-
-function getEvenNumbers(start, end) {
-  const evenNumbers = [];
-
-  for (let i = start; i <= end; i += 1) {
-    if (i % 2 === 0) {
-      evenNumbers.push(i);
-    }
-  }
-
-  return evenNumbers;
-}
-
-// Приклад використання:
-console.log(getEvenNumbers(2, 5)); // [2, 4]
-console.log(getEvenNumbers(3, 11)); // [4, 6, 8, 10]
-console.log(getEvenNumbers(6, 12)); // [6, 8, 10, 12]
-console.log(getEvenNumbers(8, 8)); // [8]
-console.log(getEvenNumbers(7, 7)); // []
-
-// Зауваження: функція працює для додатних цілих чисел.
-
-// В даній функції i - це змінна-лічильник, яка використовується для
-// ітерації(перебору) чисел від start до end.На кожній ітерації змінна
-// i отримує наступне число від start до end.В тілі циклу for за
-// допомогою умови перевіряється, чи є i парним числом, і якщо так,
-//   то воно додається до масиву evenNumbers.
-
-// !!!
-// Доповни код таким чином, щоб у змінну number записувалося
-//  перше число від start до end, яке ділиться на 5 без остачі.
-
-// const start = 6;
-// const end = 27;
-// let number;
-
-// for (let i = start; i < end; i += 1) {
-//   if (i % 5 === 0) {
-//     number = i;
-//     break;
-//   }
-// }
-// console.log(number);
-// // 10
-
-// ❗️❗️❗️
-// const subscribers = [
-//   { name: "Andrew", isClosedFriend: true },
-//   { name: "Sashko", isClosedFriend: false },
-//   { name: "Peter", isClosedFriend: false },
-//   { name: "Vitaly", isClosedFriend: false },
-//   { name: "Sarah", isClosedFriend: true },
-//   { name: "Jessica", isClosedFriend: false },
-//   { name: "Gunter", isClosedFriend: false },
-//   { name: "Brad", isClosedFriend: true },
-// ];
-
-// !!!
-
-// for (let i = 0; i < subscribers.length; i++) {
-//   //  i === 0
-//   // 0 < 8 === true
-//   // console.log(subscribers[0])
-//   // i + 1
-//   // i === 1
-//   // 1 < 8 === true
-//   // console.log(subscribers[1])
-//   // і так далі до 8 (subscribers.length) до проходження довжини всіх елементів!
-//   // Цикл завершуєтсья (обережно аби не було вічного циклу (i < subscribers.length))
-
-//   console.log(subscribers[i]);
-// }
-// ! For of
-
-// for (const item of subscribers) {
-//   console.log(item);
-// }
-
-// ! For in
-
-// const obj = {
-//   name: "Dmytro",
-//   age: 18,
-//   sex: "male",
-//   nationality: "Ukrainian",
-//   hobby: "football",
-// };
-
-// for (const key in obj) {
-//   console.log(key);
-//   // так достукуємось до ключів name,sex,age)
-// }
-
-// for (const key in obj) {
-//   console.log(obj[key]);
-//   // виводяться значення обє'кта  а не його ключі
-// }
-
-// for (const key in obj) {
-//   // console.log(obj["name"]);
-//   // console.log(obj.name);
-
-// }
-
-// ! While
-
-// let i = 0;
-// while (i < subscribers.length) {
-//   console.log(subscribers[i]);
-//   i++;
-// }
-
-// ! Do While
-
-// do {
-//   console.log(subscribers[i]);
-//   i++;
-// } while (10 > 100);
-
-// ! Домашка
-// // написати функцію, яка приймає масив чисел
-// //  підносить до квадрату кожне з них
-
-// function squareArr(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     arr[i] *= arr[i];
-//   }
-//   return arr;
-// }
-// const numbers = [1, 2, 3, 4, 5, 6];
-
-// console.log(squareArr(numbers));
-
-// !!!!!!!!!! ОПЕРАЦІЇ ЗА МОДУЛЕМ
-
-// // Операція за модулем може використовуватись для визначення,
-// //   чи є число парним або непарним:
-
-// let num = 10;
-// if (num % 2 === 0) {
-//   console.log(num + " is even");
-// } else {
-//   console.log(num + " is odd");
-// }
-
-// // Операція за модулем може використовуватись для перевірки,
-// // чи є число кратним певному числу:
-
-// let num2 = 15;
-// let divisor = 5;
-// if (num2 % divisor === 0) {
-//   console.log(num2 + " is divisible by " + divisor);
-// } else {
-//   console.log(num2 + " is not divisible by " + divisor);
-// }
-// // Операція за модулем може використовуватись для
-// // перетворення годин в 12 - годинний формат:
-
-// let hours = 17;
-// let hours12 = hours % 12;
-// console.log("The time is " + hours12 + " PM");
-
-// // Операція за модулем може використовуватись для перевірки,
-// // чи є рік високосним:
-
-// let year = 2022;
-// if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-//   console.log(year + " is a leap year");
-// } else {
-//   console.log(year + " is not a leap year");
-// }
-
-// !!!!!!  ОБ'ЄКТИ  !!!!!
-
 /**
   |==============================================================================|
   |                         MODULE 1  LESSON 1
@@ -438,7 +7,8 @@ console.log(getEvenNumbers(7, 7)); // []
 // ❗️❗️❗️ Оголошення змінних
 
 // const a = "variable"; // ініціалізуємо завжди зі значенням
-// a = "new variable"; // отримаємо в консолі TypeError, адже переприсвоювати значення змінним, оголошеним через const, не можна. Важливо: якщо цей рядок не закоментувати, скрипт запнеться на помилці і далі не виконуватиметься.
+// a = "new variable"; // отримаємо в консолі TypeError, адже переприсвоювати значення змінним,
+// оголошеним через const, не можна.Важливо: якщо цей рядок не закоментувати, скрипт запнеться на помилці і далі не виконуватиметься.
 // let b; // можемо ініціалізувати без присвоєння значення;
 
 // b = "one more variable"; // значення може бути присвоєно пізніше, після ініціалізації;
@@ -1923,16 +1493,16 @@ console.log(getEvenNumbers(7, 7)); // []
 
 //   const arrowAdd2 = (a, b, c) => a + b + c;
 
-const mathOperations = (num1, num2, callback1, callback2) => {
-  if (num1 > num2) {
-    const result = callback1(num1, num2);
-    return result;
-  } else if (num2 > num1) {
-    return callback2(num1, num2);
-  } else {
-    return "Enter another numbers";
-  }
-};
+// const mathOperations = (num1, num2, callback1, callback2) => {
+//   if (num1 > num2) {
+//     const result = callback1(num1, num2);
+//     return result;
+//   } else if (num2 > num1) {
+//     return callback2(num1, num2);
+//   } else {
+//     return "Enter another numbers";
+//   }
+// };
 
 //   const add = (num1, num2) => num1 + num2;
 //   const substract = (num1, num2) => num2 - num1;
@@ -1968,3 +1538,398 @@ const mathOperations = (num1, num2, callback1, callback2) => {
   |                         MODULE 4   LESSON 2 
   |==============================================================================|
 **/
+// const planets = ["Земля", "Марс", "Венера", "Юпітер"];
+
+// const planetsInUpperCase = planets.map(planet => planet.toUpperCase());
+// console.log(planetsInUpperCase); // ['ЗЕМЛЯ', 'МАРС', 'ВЕНЕРА', 'ЮПІТЕР']
+
+// const users = [
+//   {
+//     id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     skills: ["ipsum", "lorem"],
+//     gender: "male",
+//     age: 37,
+//   },
+//   {
+//     id: "7a3cbd18-57a1-4534-8e12-1caad921bda1",
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
+//     gender: "female",
+//     age: 34,
+//   },
+//   {
+//     id: "88beb2f3-e4c2-49f3-a0a0-ecf957a95af3",
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     skills: ["nulla", "anim", "proident", "ipsum", "elit"],
+//     gender: "male",
+//     age: 24,
+//   },
+//   {
+//     id: "249b6175-5c30-44c6-b154-f120923736f5",
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     skills: ["adipisicing", "irure", "velit"],
+//     gender: "female",
+//     age: 21,
+//   },
+//   {
+//     id: "334f8cb3-eb04-45e6-abf4-4935dd439b70",
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     skills: ["ex", "culpa", "nostrud"],
+//     gender: "male",
+//     age: 27,
+//   },
+//   {
+//     id: "150b00fb-dd82-427d-9faf-2879ea87c695",
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     skills: ["non", "amet", "ipsum"],
+//     gender: "male",
+//     age: 38,
+//   },
+//   {
+//     id: "e1bf46ab-7168-491e-925e-f01e21394812",
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     skills: ["lorem", "veniam", "culpa"],
+//     gender: "female",
+//     age: 39,
+//   },
+// ];
+
+// const ages1 = users.map(user => user.age)
+// console.log(ages1)
+
+// const ages2 = users.map(({ age}) => age)
+
+// console.log(ages2)
+
+// const students = [
+//   { name: "Манго", courses: ["математика", "фізика"] },
+//   { name: "Полі", courses: ["інформатика", "математика"] },
+//   { name: "Ківі", courses: ["фізика", "біологія"] },
+// ];
+
+// const a = students.map(({ courses }) => courses)
+
+// const b = a.flat()
+
+// console.log(b)
+// console.log(a)
+
+// const courses = students.flatMap(({courses}) => courses);
+// console.log(courses) // ['математика', 'фізика', 'інформатика', 'математика', 'фізика', 'біологія']
+
+// const students = [
+//   { name: "Манго", courses: ["математика", "фізика", [1, 2, [7, 8, [100, 700, [5, 10]]]]] },
+//   { name: "Полі", courses: ["інформатика", "математика", [3, 4, [9, 10]]] },
+//   { name: "Ківі", courses: ["фізика", "біологія", [5, 6]] },
+// ];
+
+// const courses = students.flatMap(({courses}) => courses);
+// console.log(courses.flat())
+
+// const a = students.map(({ courses }) => courses)
+
+// console.log(a.flat(Infinity))
+
+// const users1 = users.filter(({ balance }) => balance > 3000 )
+// console.log(users1)
+
+// const students = [
+//   { name: "Манго", courses: ["математика", "фізика"] },
+//   { name: "Полі", courses: ["інформатика", "математика"] },
+//   { name: "Ківі", courses: ["фізика", "біологія"] },
+// ];
+
+// const allCourses = students.flatMap(student => student.courses);
+// // ['математика', 'фізика', 'інформатика', 'математика', 'фізика', 'біологія'];
+// console.log(allCourses)
+
+// const uniqueCourses = allCourses.filter(
+//   (course, index, array) => {
+//   console.log('#iteration', index + 1)
+//   console.log('index', index)
+//   console.log(array.indexOf(course))
+//   return array.indexOf(course) === index
+//   }
+// );
+
+// const uniqueCourses = allCourses.filter(
+//   (course, index, array) => array.indexOf(course) === index
+// );
+
+// console.log(uniqueCourses)
+
+// const users2 = users.filter(({ name, balance }) => balance > 3000 && name[0] === "S")
+// console.log(users2)
+
+// const userFind = users.find(({ name, balance }) => balance > 3000 && name[0] === "S")
+// console.log(userFind)
+
+// const userFind = users.find(({ balance }) => balance > 3000 )
+// console.log(userFind)
+
+// console.log(users.indexOf(userFind))
+
+// const index = users.findIndex(({  balance }) => balance > 3000 )
+// console.log(index)
+
+// const result1 = users.every(({ balance }) => balance > 1000)
+// const result2 = users.every(({age}) => age >= 20 && age <=30)
+
+// console.log(result2)
+
+// const result3 = users.some(({ eyeColor }) => eyeColor === 'green')
+// const result4 = users.some(({friends}) => friends.length > 5)
+// console.log(result4)
+
+// const total = [2, 7, 3, 14, 6].reduce((previousValue, number) => {
+//   return previousValue + number;
+// }, 0);
+
+// console.log(total); // 32
+
+// const array = [2, 7, 3, 14, 6]
+// const init = 0
+// const total = array.reduce((previousValue, number, index) => {
+//   console.log('Iteration:', index + 1)
+//   console.log('previousValue', previousValue)
+//   console.log('number', number)
+//   const res = previousValue + number;
+//   console.log('res', res)
+//   return res;
+// }, init);
+
+// console.log(total); // 32
+
+/**
+  |==============================================================================|
+  |                         MODULE 5   LESSON 1 
+  |==============================================================================|
+**/
+// const inventory = {
+//   items: ['Knife', 'Gas mask'],
+//   add(itemName) {
+//     console.log(`Adding ${itemName} to inventory`);
+
+//     this.items.push(itemName);
+//   },
+//   remove(itemName) {
+//     console.log(`Removing ${itemName} from inventory`);
+
+//     this.items = this.items.filter(item => item !== itemName);
+//   },
+// };
+
+// const invokeInventoryAction = function(itemName, action) {
+//   console.log(`Invoking action on ${itemName}`);
+//   action(itemName);
+// };
+
+// invokeInventoryAction('Medkit', inventory.add);
+// // Invoking action on Medkit
+// // Adding Medkit to inventory
+
+// // console.log(inventory.items); // ['Knife', 'Gas mask', 'Medkit']
+
+// invokeInventoryAction('Gas mask', inventory.remove);
+// // Invoking action on Gas mask
+// // Removing Gas mask from inventory
+
+// // console.log(inventory.items); // ['Knife', 'Medkit']
+
+// ! BIND
+
+// const inventory = {
+//   items: ['Knife', 'Gas mask'],
+//   add(itemName) {
+//     console.log(`Adding ${itemName} to inventory`);
+
+//     this.items.push(itemName);
+//   },
+//   remove(itemName) {
+//     console.log(`Removing ${itemName} from inventory`);
+
+//     this.items = this.items.filter(item => item !== itemName);
+//   },
+// };
+
+// const invokeInventoryAction = function (itemName, action) {
+//   console.log(`Invoking action on ${itemName}`);
+//   action(itemName);
+// };
+
+// invokeInventoryAction('Medkit', inventory.add.bind(inventory));
+
+// // Invoking action on Medkit
+// // Adding Medkit to inventory
+
+// // console.log(inventory.items); // ['Knife', 'Gas mask', 'Medkit']
+
+// invokeInventoryAction('Gas mask', inventory.remove.bind(inventory));
+// // // Invoking action on Gas mask
+// // // Removing Gas mask from inventory
+
+// // // console.log(inventory.items); // ['Knife', 'Medkit']
+
+// ! CALL
+
+// const inventory = {
+//   items: ['Knife', 'Gas mask'],
+//   add(itemName) {
+//     console.log(`Adding ${itemName} to inventory`);
+
+//     this.items.push(itemName);
+//   },
+//   remove(itemName) {
+//     console.log(`Removing ${itemName} from inventory`);
+
+//     this.items = this.items.filter(item => item !== itemName);
+//   },
+// };
+
+// const invokeInventoryAction = function (itemName, action) {
+//   // console.log(this)
+//   console.log(`Invoking action on ${itemName}`);
+//   action.call(this, itemName);
+// };
+
+// invokeInventoryAction.call(inventory, 'Medkit', inventory.add);
+// // Invoking action on Medkit
+// // Adding Medkit to inventory
+
+// // console.log(inventory.items); // ['Knife', 'Gas mask', 'Medkit']
+
+// invokeInventoryAction.call(inventory, 'Gas mask', inventory.remove);
+// // Invoking action on Gas mask
+// // Removing Gas mask from inventory
+
+// // console.log(inventory.items); // ['Knife', 'Medkit']
+
+// ! APPLY
+
+// const inventory = {
+//   items: ['Knife', 'Gas mask'],
+//   add(itemName) {
+//     console.log(`Adding ${itemName} to inventory`);
+
+//     this.items.push(itemName);
+//   },
+//   remove(itemName) {
+//     console.log(`Removing ${itemName} from inventory`);
+
+//     this.items = this.items.filter(item => item !== itemName);
+//   },
+// };
+
+// const invokeInventoryAction = function (itemName, action) {
+//   console.log(this)
+//   console.log(`Invoking action on ${itemName}`);
+//   action.apply(this, [itemName]);
+// };
+
+// invokeInventoryAction.apply(inventory, ['Medkit', inventory.add]);
+// // Invoking action on Medkit
+// // Adding Medkit to inventory
+
+// // console.log(inventory.items); // ['Knife', 'Gas mask', 'Medkit']
+
+// invokeInventoryAction.apply(inventory, ['Gas mask', inventory.remove]);
+// // Invoking action on Gas mask
+// // Removing Gas mask from inventory
+
+// // console.log(inventory.items); // ['Knife', 'Medkit']
+
+/**
+  |==============================================================================|
+  |                         MODULE 5   LESSON 2 
+  |==============================================================================|
+**/
+
+// const student = {
+//     name: 'Jhon',
+//     email: 'jhon@gmail.com',
+//     homeworkResults: [],
+//     getName() {
+//        return this.name
+//     },
+//     getEmail() {
+//         console.log(this.email)
+//     },
+//     getHWResults() {
+//         console.log(this.homeworkResults)
+//     },
+//     addHomeworkResults(topic, sucess) {
+//     //   const item = {topic:topic, sucess:sucess}
+//         const item = {topic, sucess}
+//         this.homeworkResults.push(item)
+//     }
+// }
+
+// console.log(student.getName())
+// student.getEmail()
+// // student.getHWResults()
+// student.addHomeworkResults('HTML/CSS', true)
+// student.getHWResults()
+// student.addHomeworkResults('JS', true)
+// student.getHWResults()
+
+// const Student = function (name, email) {
+//     const studentName = name;
+//     const studentEmail = email;
+//     const homeworkResults = [];
+
+//     this.getName = function () {
+//       return studentName;
+//     };
+
+//     this.getEmail = function () {
+//       return studentEmail;
+//     };
+
+//     this.getHomeworkResults = function () {
+//       return homeworkResults;
+//     };
+
+//     this.addHomeworkResult = function (topic, success) {
+//       homeworkResults.push({ topic: topic, success: success });
+//     };
+//   };
+
+// //   const student1 = new Student('Anna', 'anna@ukr.net')
+//   const student2 = new Student('Oleh', 'oleh@ukr.net')
+//   console.log(student2)
