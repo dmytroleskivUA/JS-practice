@@ -195,18 +195,18 @@
 
 // !!! forEach
 
-const values = ["a", "b", "c"];
-values.forEach((value) => console.log(value));
+// const values = ["a", "b", "c"];
+// values.forEach((value) => console.log(value));
 
-const obj = { name: "John", age: 30 };
-console.log(obj);
+// const obj = { name: "John", age: 30 };
+// console.log(obj);
 
-function add(a, b) {
-  alert(`Adding ${a} and ${b}`); // Виводить повідомлення перед виконанням операції
-  return a + b;
-}
+// function add(a, b) {
+//   alert(`Adding ${a} and ${b}`); // Виводить повідомлення перед виконанням операції
+//   return a + b;
+// }
 
-console.log(add(2, 3));
+// console.log(add(2, 3));
 
 // ! for
 
@@ -634,33 +634,33 @@ console.log(add(2, 3));
 
 // !!!!!  SCOPE / Області видимості
 
-const people = [
-  {
-    name: "Vitaly",
-    age: 26,
-    sex: "male",
-  },
-  {
-    name: "Jessica",
-    age: 17,
-    sex: "female",
-  },
-  {
-    name: "Robert",
-    age: 16,
-    sex: "male",
-  },
-  {
-    name: "Sarah",
-    age: 20,
-    sex: "female",
-  },
-  {
-    name: "Rob",
-    age: 34,
-    sex: "male",
-  },
-];
+// const people = [
+//   {
+//     name: "Vitaly",
+//     age: 26,
+//     sex: "male",
+//   },
+//   {
+//     name: "Jessica",
+//     age: 17,
+//     sex: "female",
+//   },
+//   {
+//     name: "Robert",
+//     age: 16,
+//     sex: "male",
+//   },
+//   {
+//     name: "Sarah",
+//     age: 20,
+//     sex: "female",
+//   },
+//   {
+//     name: "Rob",
+//     age: 34,
+//     sex: "male",
+//   },
+// ];
 
 // function addNiceAjective(arr) {
 //   for (let i = 0; i < arr.length; i++) {
@@ -700,14 +700,27 @@ const people = [
 
 // !а можна так
 
-function addNiceAjective(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    element.name += element.sex === "male" ? " handsome" : " beautiful";
-  }
-  return arr;
-}
+// function addNiceAjective(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i];
+//     element.name += element.sex === "male" ? " handsome" : " beautiful";
+//   }
+//   return arr;
+// }
 
-console.log(addNiceAjective(people));
+// console.log(addNiceAjective(people));
 
 // !!! THIS
+
+// ("use strict");
+// function foo() {
+//   console.log(this);
+// }
+// foo();
+
+const obj = {
+  foo() {
+    console.log(this);
+  },
+};
+obj.foo();
