@@ -70,7 +70,49 @@ function renderList() {
         `<li id='${id}' class='item'><p class='item-title'>${title}</p><button class='delete'>Delete</button><button class='edit'>Edit</button></button></li>`
     )
     .join("");
+  list.innerHTML = "";
   list.insertAdjacentHTML("beforeend", markup);
+  const items = document.querySelectorAll(".item");
+  items.forEach((item) => item.addEventListener("click", itemClickHandler));
 }
 
 renderList();
+
+function itemClickHandler(event) {
+  const id = event.currentTarget.id;
+  if (event.target.nodeName === "P") {
+    renderPreview(event.target.textContent);
+  } else if (event.target.textContent === "Delete") {
+    deleteBook(id);
+  }
+}
+
+function renderPreview(text) {
+  const book = books.find(({ title }) => title === text);
+  const markup = createPreviewMarkup(book);
+  div2.innerHTML = "";
+  div2.insertAdjacentHTML("afterbegin", markup);
+}
+
+function createPreviewMarkup({ id, title, author, img, plot }) {
+  return `<div class='preview' data-id=${id}>
+  <h2>${title}</h2>
+  <p>${author}</p>
+  <img src='${img}' alt='${title}'>
+  <p>${plot}</p>
+  </div>`;
+}
+
+function deleteBook(bookId) {
+  books = books.filter(({ id }) => id !== bookId);
+  renderList();
+  const preview = document.querySelector(".preview");
+  // if (preview) {
+  //   if (bookId === preview.dataset.id) {
+  //     div2.innerHTML = "";
+  //   }
+  // }
+  if (preview && bookId === preview.dataset.id) {
+    div2.innerHTML = "";
+  }
+}

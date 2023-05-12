@@ -724,3 +724,45 @@ const obj = {
   },
 };
 obj.foo();
+
+// !!!!!
+
+// Домашка:
+// // №1: Я поняла задание так, что в итоге в консоли необходимо увидеть значение атрибута, т.е. "yes":
+// const elemOne = document.querySelector('[data-say-hi]');
+// const attr = elemOne.getAttribute('data-say-hi');
+// console.log(attr);
+// // или:
+// // сonst elemOne = document.querySelector('[data-say-hi]');
+
+// console.log(elemOne.dataset.sayHi);
+// // №2:
+// const textElement = document.getElementsByTagName('li')[1];
+// const textElementContent = textElement.textContent;
+// console.log(textElementContent);
+// // или:
+// // const textElement = document.querySelectorAll('li');
+// for(const elem of textElement) {
+// 	const textElementContent = elem.textContent;
+// 	if(textElementContent === 'Йончи') {
+// 		console.log(textElementContent);
+// 	};
+// };
+// // №3:
+// const elem = document.querySelectorAll('.like');
+// console.log(elem);
+// // №4:
+// // Никуда не добавится, т.к.будет ошибка.Для решения проблемы необходимо использовать не метод ".querySelectorAll",
+// //   а  метод ".querySelector" и тогда текст вставится в виде третьего пункта < li > в конец тега < ul >.
+
+// !!!!!!! Інше
+
+const button = document.querySelector("button");
+
+function handleClick(event) {
+  console.log("Кнопку натиснуто");
+}
+
+button.addEventListener("click", handleClick);
+
+//   ❗️❗️❗️
